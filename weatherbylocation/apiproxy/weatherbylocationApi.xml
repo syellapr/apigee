@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="11" name="weatherbylocationApi">
+    <Basepaths>/weatherbylocationapi</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1510413375507</CreatedAt>
+    <CreatedBy>sailendra@yandex.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>weatherbylocationApi</DisplayName>
+    <LastModifiedAt>1510413375507</LastModifiedAt>
+    <LastModifiedBy>sailendra@yandex.com</LastModifiedBy>
+    <Policies>
+        <Policy>ExtractAddress</Policy>
+        <Policy>ExtractLatLng</Policy>
+        <Policy>GoogleAddressApiCallout</Policy>
+        <Policy>JsonToXml</Policy>
+        <Policy>RaiseFaultForInvalidAddress</Policy>
+        <Policy>ResponseWeatherCache</Policy>
+        <Policy>printAssignedVariables</Policy>
+        <Policy>verifyAccessToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://printAssignedVariables.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>auth</TargetEndpoint>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
